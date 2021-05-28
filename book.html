@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating Div Product Grid Demo</title>
+    <style>
+      body{
+        background-color: grey;
+      }
+      /* Float container */
+      #p-float {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* Clearfix */
+        overflow: auto;
+      }
+      #p-float::after {
+        /* Clearfix */
+        content: "";
+        clear: both;
+        display: table;
+      }
+      /* Product items */
+      div.p-float {
+        float: left;
+        width: 25%;
+      }
+      div.p-float-in {
+        box-sizing: border-box;
+        margin: 5px; 
+        padding: 10px;
+        border: 1px solid #f2dcdc;
+        background: #fff7f7;
+      }
+      img.p-img {
+        width: 100%;
+        height: auto;
+      }
+      div.p-name {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      div.p-price {
+        color: #f44242;
+      }
+      div.p-desc {
+        color: #888;
+        font-size: 0.9em;
+      }
+      button.p-add {
+        background: #f46b41;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 5px 5px 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      /* Responsive */
+      @media only screen and (max-width: 1024px) {
+        div.p-float { width: 33%; }
+      }
+      @media only screen and (max-width: 600px) {
+        div.p-float { width: 50%; }
+      }
+      /* [DOES NOT MATTER] */
+      html, body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, sans-serif;
+      }
+      nav{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:auto;
+    font-family: sans-serif;
+  }
+  li{
+    float: left;
+  }
+  nav a{
+    width:100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+    color:white;
+    
+    padding: 20px 10px;
+    font-family:Arial;
+  }
+  nav a:hover{
+    background: skyblue;
+    color: black;
+  }
+  footer{
+  width:100%;
+  height: auto;
+  background-color: #333;
+  color: #17ff8d;
+  font-size: 23px;
+  text-align: center;
+  line-height: 50px;
+}
+footer a:hover{
+    color:blue;
+  }
+a{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    color:#01ff70;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html"> HOME</a><br>
+        <li><a href="contact.html"> CONTACT</a></li>
+        <li><a href="about.html"> ABOUT</a></li>
+      </ul>
+    </nav>
+    <div id="p-float">
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book1.jpg"/>
+        <div class="p-name">Item A</div>
+        <div class="p-price">Rs.243</div>
+        <div class="p-desc">As far as re-reading books, To Kill a Mockingbird is the perfect storm: we all read it in school, it has the nostalgic air of childhood about it, it introduced a lot of us to ideas about systemic injustice, and it's still very relevant in America today though I think we can all agree it's time to move past the white savior narrative.<br><br></div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book2.jpg"/>
+        <div class="p-name">Item B</div>
+        <div class="p-price">Rs.345</div>
+        <div class="p-desc">Not very controversial opinion:The Hobbit is Tolkien's best book.The Hobbit is just much faster and a lot more fun. The Hobbit is less of a grand, mytho-poetic epic, and more of a kids' adventure story featuring a lot of dwarves with silly names, and it's delightful.<br><br></div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book3.jpg"/>
+        <div class="p-name">Item C</div>
+        <div class="p-price">Rs.388</div>
+        <div class="p-desc">Fahrenheit 451 is only just behind 1984 when it comes to famous sci-fi dystopias. Perhaps Fahrenheit 451 is slightly closer to home for book-lovers, though, since it deals with a world in which all books are burned. Bradbury's vision of a society enslaved by mass media, drugs, and enforced conformity is also pretty dang prophetic.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book4.jpg"/>
+        <div class="p-name">Item D</div>
+        <div class="p-price">Rs.422</div>
+        <div class="p-desc">It's Pride and Prejudice, people! The original rom-com! The awkward, sassy, slow-burn, enemies-to-lovers plot that all great love stories since have attempted to emulate! It's somehow both intensely passionate and entirely calming (like a very strong cup of tea),and it makes for an excellent re-read.<br><br></div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book8.jpg"/>
+        <div class="p-name">Item E</div>
+        <div class="p-price">Rs.210</div>
+        <div class="p-desc">I think I'm still a little messed up from watching both the cartoon and the live action Animal Farm movies in sixth grade. Regardless, this is another dystopia (kind of), but with some not-so cuddly animals instead of humans. Like 1984, its political relevance seems to be timeless, reminding us that totalitarian regimes can rise out of the most righteous intentions</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book6.jpg"/>
+        <div class="p-name">Item F</div>
+        <div class="p-price">Rs.222</div>
+        <div class="p-desc">A childhood classic, a middle school read, and a chilling dystopian future? Yes. Please. I remember everyone in our class loving The Giver, even the kids who usually didn't want to do the school reading. It's just the ideal blend of hyper-conformist, murderous suburban hellscape and fun YA adventure novel.<br><br></div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book7.jpg"/>
+        <div class="p-name">Item G</div>
+        <div class="p-price">Rs.233</div>
+        <div class="p-desc">We think Lord of the Flies sums up the entirety of this list pretty neatly: people like to re-read books about childhood and books about violent dystopian nightmares. And if you didn't notice those last two things the first time you read it... I guess it's time to read it again.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+
+       <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/book5.jpeg"/>
+        <div class="p-name">Item H</div>
+        <div class="p-price">Rs.400</div>
+        <div class="p-desc">Just thinking about A Wrinkle in Time makes me want to cry tears of joy and gratitude (and also do math?). This is one of the only books I can remember from my childhood that had an awkward, angry, math-loving girl as a protagonist for a thrilling space adventure. It still holds up as a weird, lovely, philosophically charged masterpiece of science fiction.<br><br><br><br></div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+
+
+    </div>
+      <footer>Copyright &copy;  BOOK  ADDICT  2020 
+       <a href="index.html">Home| </a>
+        <a href="about.html">About Us| </a>
+        <a href="contact.html">Contact</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<style type="text/css">
+	html{
+		height: 100%;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+		background: url(images/image15.jpg);
+		background-size:cover;
+		background-position: center;
+		font-family: sans-serif;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+
+	}
+	.loginbox{
+		width: 320px;
+		height:680px;
+		background: #000;
+		color: #fff;
+		top:80%;
+		left:50%; 
+		position:absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		padding: 70px 30px;
+	}
+	.avatar{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		top: -50px;
+		left: calc(50% - 50px);
+	}
+	h1{
+		margin: 0;
+		padding: 0 0 20px;
+		text-align: center;
+		font-size:22px;
+	}
+	.loginbox p{
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+	.loginbox input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.loginbox input[type="text"], input[type="password"]
+	{
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline: none;
+		height: 40px;
+		color: #fff;
+		font-size: 16px;
+
+	}
+	.loginbox input[type="submit"]
+	{
+		border:none;
+		outline: none;
+		height: 40px;
+		background: red;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 20px;
+
+	}
+	.loginbox input[type="submit"]:hover
+	{
+		cursor: pointer;
+		background: #01ff70;
+		color: #000;
+	}
+	.loginbox a{
+		text-decoration: none;
+		font-size: 12px;
+		line-height: 20px;
+		color: darkgrey;
+	}
+	.loginbox a:hover{
+		color: #01ff70;
+	}
+	.loginbox p:hover{
+		color: #01ff70;
+	}
+	nav{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:auto;
+    font-family: sans-serif;
+  }
+  li{
+    float: left;
+  }
+  nav a{
+    width:100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+    color:white;
+    
+    padding: 20px 10px;
+    font-family:Arial;
+  }
+  nav a:hover{
+    background: skyblue;
+    color: black;
+  }
+ /*footer>{
+	width:100%;
+	height: 40px;
+	background-color: #333;
+	color: #17ff8d;
+	font-size: 23px;
+	text-align: center;
+	line-height: 50px;
+	position: sticky;
+	bottom:0;	
+	margin-top:1000px;
+	}*/
+a{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    color:#01ff70;
+}
+</style>
+<body>
+	<nav>
+      <ul>
+        <li><a href="index.html"> HOME</a><br>
+        <li><a href="contact.html"> CONTACT</a></li>
+        <li><a href="about.html"> ABOUT</a></li>
+      </ul>
+    </nav>
+
+
+	
+<div class="loginbox">
+		<img src="Images/proicon.jfif" class="avatar">
+		<h1>Sign-up Here</h1>
+		<form>
+			<p>First name:</p>
+			<input type="text" name="" placeholder="Enter First name">
+			<p>Last name:</p>
+			<input type="text" name="" placeholder="Enter Last name">
+			<p>E-Mail:</p>
+			<input type="text" name="" placeholder="Enter E-Mail">
+            <p>Birthday:</p><br>
+            <input type="date" name="birthday"><p>
+            <p>Gender:</p>
+            <select name="gender">
+            <option value="select">Select</option>
+	        <option value="male">Male</option>
+	        <option value="female">Female</option>
+            <option value="other">Other</option></select>
+            <p>Password:</p>
+			<input type="text" name="" placeholder="Enter Password">
+            <input type="submit" formaction="#"value="Register">
+            <a href="signin.html">Already have an account?</a>	
+</form>
+	</div>
+<!--div class="foot">
+<footer>Copyright &copy; BOOK ADDICT 2020
+	<a href="terms.html">*Terms & Conditions</a>
+		</footer-->
+</div>
+</body>
+</html>
